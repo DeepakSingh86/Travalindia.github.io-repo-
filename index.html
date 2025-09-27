@@ -997,7 +997,7 @@
                         <h3>संपर्क करें</h3>
                         <p><i class="fas fa-map-marker-alt"></i> सेक्टर 05, गुरुग्राम, भारत</p>
                         <p><i class="fas fa-phone"></i> +91 12412732</p>
-                        <p><i class="fas fa-envelope"></i> info@urvashigift@gmail.com</p>
+                        <p><i class="fas fa-envelope"></i> info@Travalindiagift@gmail.com</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -1080,8 +1080,8 @@
                             <p><strong>productId, productName, quantity, price, imageUrl1, imageUrl2, imageUrl3</strong></p>
                             <p>उदाहरण:</p>
                             <pre>
-P001,सुंदर झुमके साइज-1,50,599.99,earrings1.jpg,earrings2.jpg,earrings3.jpg
-P002,सुंदर झुमके साइज-2,30,149.50,https://raw.githubusercontent.com/Urvashimahawar/urvashi.github.io/main/images/earrings4.jpg,earrings5.jpg,earrings6.jpg
+<!-- P001,सुंदर झुमके साइज-1,50,599.99,earrings1.jpg,earrings2.jpg,earrings3.jpg -->
+<!-- P002,सुंदर झुमके साइज-2,30,149.50,https://raw.githubusercontent.com/Travalindiamahawar/Travalindia.github.io/main/images/earrings4.jpg,earrings5.jpg,earrings6.jpg -->
                             </pre>
                         </div>
 
@@ -1163,13 +1163,13 @@ document.addEventListener('DOMContentLoaded', async function() {
             const ADMIN_PASSWORD = "admin123";
 
             // GitHub repository information
-            const GITHUB_REPO = "Urvashimahawar/urvashi.github.io";
+            const GITHUB_REPO = "DeepakSingh86/Travalindia.github.io-repo-";
             const GITHUB_BRANCH = "main";
             const GITHUB_IMAGE_FOLDER = "images";
             const GITHUB_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/${GITHUB_IMAGE_FOLDER}/`;
 
             // Initialize products array
-            let products = JSON.parse(localStorage.getItem('urvashiProducts')) || [];
+            let products = JSON.parse(localStorage.getItem('TravalindiaProducts')) || [];
 
             // Format number as INR
             function formatINR(amount) {
@@ -1181,7 +1181,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
             // Save products to localStorage
             function saveProducts() {
-                localStorage.setItem('urvashiProducts', JSON.stringify(products));
+                localStorage.setItem('TravalindiaProducts', JSON.stringify(products));
             }
 
             // Function to convert image URL to GitHub raw URL
@@ -1223,7 +1223,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             async function getAvailableCSVFiles() {
                 // This is a simplified approach - in a real scenario, you'd use GitHub API
                 // For now, we'll try to load a predefined list of possible CSV files
-                const possibleFiles = ['products.csv', 'sample-products.csv', 'urvashi-products.csv'];
+                const possibleFiles = ['products.csv', 'sample-products.csv', 'Travalindia-products.csv'];
                 const availableFiles = [];
 
                 for (const fileName of possibleFiles) {
@@ -1618,7 +1618,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             });
 
             // Cart functionality
-            let cart = JSON.parse(localStorage.getItem('urvashiCart')) || [];
+            let cart = JSON.parse(localStorage.getItem('TravalindiaCart')) || [];
 
             function addToCart(productId, quantity) {
                 const product = products.find(p => p.id === productId);
@@ -1644,7 +1644,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             }
 
             function saveCart() {
-                localStorage.setItem('urvashiCart', JSON.stringify(cart));
+                localStorage.setItem('TravalindiaCart', JSON.stringify(cart));
             }
 
             function updateCartCount() {
@@ -1767,7 +1767,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'urvashi_products.csv';
+                a.download = 'Travalindia_products.csv';
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
@@ -1957,5 +1957,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     </script>
 </body>
 </html>
+
 
 
